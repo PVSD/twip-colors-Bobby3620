@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner kbInput = new Scanner(System.in);
-        System.out.println("Choose to enter a color by using rgb or hexadecimal");
+        System.out.println("Select to use rgb or hexadecimal to convert to either one(ex. rgb to hexadecimal)");
         String chose = kbInput.nextLine();
 
         if (chose.equalsIgnoreCase("rgb")) {
@@ -26,6 +26,10 @@ public class Main {
                 }
                 timer++;
             }
+
+            // This is how to refer back to the abstract class
+            rgb theClass = new rgb(); //theClass refers to the rgb class ye
+            theClass.rgbToHex(rgb);
 
             if (chose.equalsIgnoreCase("hexadecimal")) {
 
